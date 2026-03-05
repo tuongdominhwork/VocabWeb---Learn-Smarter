@@ -96,18 +96,6 @@ npm run dev
 - Client: http://localhost:5173
 - API: http://localhost:4000
 
-### Demo Accounts (after seed)
-
-| Role | Email | Password |
-|------|-------|----------|
-| Admin | admin@test.com | Password123 |
-| Teacher | teacher@test.com | Password123 |
-| Student | student@test.com | Password123 |
-
-Demo classroom join code: **APPLE-1234**
-
----
-
 ## Project Structure
 
 ```
