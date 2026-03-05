@@ -142,6 +142,22 @@ claude-vocab-web/
 
 ---
 
+## 🚀 Live Demo
+
+The application is deployed and live at:
+
+**🌐 Frontend:** [https://vocab-web-learn-smarter.vercel.app](https://vocab-web-learn-smarter.vercel.app)
+
+> Admin panel: [https://vocab-web-learn-smarter.vercel.app/admin/users](https://vocab-web-learn-smarter.vercel.app/admin/users)
+
+| Service | Platform | URL |
+|---------|----------|-----|
+| Frontend | Vercel | [vocab-web-learn-smarter.vercel.app](https://vocab-web-learn-smarter.vercel.app) |
+| Backend | Railway | Deployed via [railway.app](https://railway.app) |
+| Database | Turso | libSQL cloud database |
+
+---
+
 ## Deployment
 
 ### Frontend → Vercel
@@ -149,17 +165,16 @@ claude-vocab-web/
 1. Push to GitHub
 2. Connect repo on [vercel.com](https://vercel.com)
 3. Set **Root Directory** to `client`
-4. Add environment variable: `VITE_API_URL=https://your-backend.onrender.com`
+4. Add environment variable: `VITE_API_URL=https://your-backend.up.railway.app`
 5. Deploy
 
-### Backend → Render (Free)
+### Backend → Railway
 
-1. Create a new **Web Service** on [render.com](https://render.com)
-2. Set **Root Directory** to `server`
-3. **Build Command**: `npm install`
-4. **Start Command**: `npm start`
-5. Add all environment variables from `server/.env.example`
-6. Deploy
+1. Create a new project on [railway.app](https://railway.app)
+2. Connect your GitHub repo
+3. Set **Root Directory** to `server`
+4. Add all environment variables from `server/.env.example`
+5. Deploy — Railway auto-detects Node.js and runs `npm start`
 
 ### Database → Turso (Free)
 
